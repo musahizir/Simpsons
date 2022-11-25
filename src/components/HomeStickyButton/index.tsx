@@ -1,14 +1,16 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { Pressable, StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 import AntDesign from 'react-native-vector-icons/AntDesign'
+import { useNavigation } from '@react-navigation/native'
 
 type Props = {}
 
 const HomeStickyButton = (props: Props) => {
+    const navigation = useNavigation<any>()
     return (
-        <View style={styles.rootContainer}>
+        <Pressable onPress={()=> navigation.push('SimpsonsAdd')} style={styles.rootContainer}>
             <AntDesign name='plus' size={30} color='white' />
-        </View>
+        </Pressable>
     )
 }
 

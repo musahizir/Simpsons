@@ -30,8 +30,8 @@ const styles = StyleSheet.create({
         borderBottomColor:'#eee',
 
     },
-    leftComponentContainer:{marginRight:'auto'},
+    leftComponentContainer:{flex:1,},
     title:{alignSelf:'center',fontWeight:'bold',fontSize:15},
-    rightComponentContainer:{marginLeft:'auto'}
+    rightComponentContainer:{flex:1,backgroundColor:'yellow'}
 
 })
